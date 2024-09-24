@@ -29,3 +29,7 @@ variable "capabilities" {
 variable "service_healthcheck" {
   type = map(any)
 }
+
+
+variable "service_launch_type" {}
+variable "service_task_count" {}
