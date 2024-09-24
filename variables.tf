@@ -25,3 +25,7 @@ variable "environment_variables" {
 variable "capabilities" {
   type = list(any)
 }
+
+variable "service_healthcheck" {
+  type = map(any)
+}
