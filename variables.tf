@@ -1,3 +1,5 @@
+# tflint-ignore-file: terraform_typed_variables
+
 variable "service_name" {}
 
 variable "cluster_name" {}
@@ -36,4 +38,17 @@ variable "service_healthcheck" {
   type = map(any)
 }
 
+### Autoscaling
+variable "scale_type" {}
+variable "task_minimum" {}
+variable "task_maximum" {}
+
+### Autoscaling CPU
+variable "scale_out_cpu_threshold" {}
+variable "scale_out_adjustment" {}
+variable "scale_out_comparison_operator" {}
+variable "scale_out_statistic" {}
+variable "scale_out_period" {}
+variable "scale_out_evaluation_periods" {}
+variable "scale_out_cooldown" {}
 
